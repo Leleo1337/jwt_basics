@@ -1,0 +1,15 @@
+{
+  "name": "jwt_basics",
+  "version": "1.0.0",
+  "description": "jwt basics studies",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/server.js"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
