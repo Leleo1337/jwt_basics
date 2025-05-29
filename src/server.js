@@ -7,6 +7,9 @@ const DATABASE_ACCESS = process.env.DATABASE_ACCESS
 export default async function start(){
     try{
         //await connectDB(DATABASE_ACCESS) this project wont use database, but this is the basic setup
+        if(!PORT){
+            throw new Error('PORT is not defined in .env')
+        }
         app.listen(PORT, () => console.log(`server listening on port ${PORT}`))
     }catch(e){
         console.log(e)
